@@ -1,0 +1,30 @@
+.card {
+  background-color: var(--color-bg-card);
+  border-radius: 20px;
+  padding: var(--card-padding-desktop);
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+}
+
+.emptyState {
+  text-align: center;
+  color: var(--color-text-disabled);
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--card-padding-tablet);
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: var(--card-padding-mobile);
+    border-radius: 12px;
+  }
+}

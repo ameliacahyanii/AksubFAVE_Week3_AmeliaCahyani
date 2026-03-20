@@ -1,0 +1,89 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background-color: var(--color-bg-task);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s;
+}
+
+.wrapper.done {
+  background-color: var(--color-bg-task-done);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.checkboxUnchecked {
+  border: 2px solid var(--color-checkbox-border);
+  background-color: transparent;
+}
+
+.checkboxChecked {
+  border: none;
+  background-color: var(--color-checkbox-checked);
+}
+
+.title {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.titleDone {
+  color: var(--color-text-done);
+  text-decoration: line-through;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 13px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    margin-top: 2px;
+  }
+}

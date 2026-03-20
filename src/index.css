@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --color-primary: #0c51ff;
+  --color-primary-light: #e8f4ff;
+  --color-primary-text: #2f46db;
+
+  /* Tomorrow Badge */
+  --color-warning-light: #fff7e3;
+  --color-warning-text: #d86c01;
+
+  /* Based on Custom Deadline */
+  --color-success-light: #e4ffe4;
+  --color-success-text: #367812;
+
+  /* Neutral */
+  --color-bg-page: #f2f2f2;
+  --color-bg-card: #ffffff;
+  --color-bg-task: #ffffff;
+  --color-bg-task-done: #f9f9f9;
+
+  /* Text */
+  --color-text-primary: #00000;
+  --color-text-secondary: #9d9d9d;
+  --color-text-muted: #888888;
+  --color-text-disabled: #aaaaaa;
+  --color-text-done: #aaaaaa;
+
+  /* Border */
+  --color-border: #e0e0e0;
+  --color-border-task: #f0f0f0;
+
+  /* Checkbox */
+  --color-checkbox-checked: #0d0d0d;
+  --color-checkbox-border: ##ebebeb;
+
+  /* Button */
+  --color-btn-primary: #0c51ff;
+  --color-btn-primary-hover: #1d4ed8;
+
+  /* Spacing */
+  --card-padding-desktop: 48px 52px;
+  --card-padding-tablet: 36px 32px;
+  --card-padding-mobile: 24px 20px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg-page);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px 8px;
+  }
+}
